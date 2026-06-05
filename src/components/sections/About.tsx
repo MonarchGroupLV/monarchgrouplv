@@ -50,10 +50,9 @@ export default function About() {
             </p>
 
             <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-5">
-              Our process is built around protecting both the asset and the client. No public
-              advertising. No estate sale signage. Assets remain securely in your possession
-              while strategic placement is executed behind the scenes through our network of
-              auction houses, private collectors, and institutional buyers.
+              Our process is built around protecting both the asset and the client. No estate
+              sale signs. No strangers walking through your property. No public exposure tied to
+              your name or address. Every asset placed through the right channel for maximum value.
             </p>
 
             <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-8">
