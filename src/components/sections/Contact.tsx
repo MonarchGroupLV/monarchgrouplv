@@ -265,6 +265,12 @@ export default function Contact() {
             </div>
           </div>
         </RevealWrapper>
+
+        <RevealWrapper delay={250}>
+          <p className="font-montserrat text-[8px] uppercase tracking-[0.28em] text-gold text-center mt-8">
+            References available upon request.
+          </p>
+        </RevealWrapper>
       </div>
     </section>
   );
