@@ -25,7 +25,7 @@ const services = [
   {
     number: "05",
     title: "Auction Strategy",
-    body: "Institutional-grade auction placement strategy leveraging relationships with Goldin, Julien's Auctions, and other premier houses to maximize realized value.",
+    body: "Institutional-grade auction placement strategy leveraging relationships with nationally recognized auction houses across key collectible categories to maximize realized value.",
   },
   {
     number: "06",

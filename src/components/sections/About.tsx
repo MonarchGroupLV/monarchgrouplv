@@ -72,24 +72,10 @@ export default function About() {
               </p>
             </blockquote>
 
-            {/* Partner row */}
-            <div className="flex items-center gap-6">
-              <div>
-                <div className="font-cormorant text-gold text-xl italic">Goldin</div>
-                <div className="font-montserrat text-[8px] text-cream-dim uppercase tracking-[0.22em]">
-                  0% Seller Fee
-                </div>
-              </div>
-              <div className="w-px h-8 bg-[rgba(184,148,42,0.3)]" />
-              <div>
-                <div className="font-cormorant text-gold text-xl italic">
-                  Julien&rsquo;s Auctions
-                </div>
-                <div className="font-montserrat text-[8px] text-cream-dim uppercase tracking-[0.22em]">
-                  Strategic Partner
-                </div>
-              </div>
-            </div>
+            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em]">
+              Our consignment network includes nationally recognized auction houses across
+              entertainment memorabilia, sports collectibles, rare books, manuscripts, and fine art.
+            </p>
           </div>
         </RevealWrapper>
       </div>
