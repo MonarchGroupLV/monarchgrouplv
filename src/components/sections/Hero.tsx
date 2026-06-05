@@ -55,7 +55,7 @@ export default function Hero() {
           className="flex justify-center mb-6 animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
-          <CrownCrest size={90} priority />
+          <CrownCrest size={140} priority />
         </div>
 
         {/* H1 */}

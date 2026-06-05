@@ -3,25 +3,100 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gold: #B8942A;
+  --gold-light: #D4AC4A;
+  --gold-bright: #E2C97E;
+  --gold-dim: #7A6018;
+  --gold-faint: rgba(184,148,42,0.15);
+  --obsidian: #080808;
+  --obs2: #0F0F0F;
+  --obs3: #141414;
+  --obs4: #1C1C1C;
+  --obs5: #242424;
+  --cream: #EDE5D0;
+  --cream-dim: #A89870;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--obsidian);
+  color: var(--cream);
+  font-family: var(--font-montserrat), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Prevent browser autofill from injecting blue/yellow backgrounds */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: var(--cream);
+  -webkit-box-shadow: 0 0 0px 1000px var(--obs3) inset;
+  caret-color: var(--cream);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 300px 300px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollLine {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.85s ease forwards;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .font-cinzel {
+    font-family: var(--font-cinzel), serif;
+  }
+  .font-cormorant {
+    font-family: var(--font-cormorant), serif;
+  }
+  .font-montserrat {
+    font-family: var(--font-montserrat), sans-serif;
   }
 }

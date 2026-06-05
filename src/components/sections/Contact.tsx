@@ -93,7 +93,7 @@ export default function Contact() {
         <RevealWrapper>
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <CrownCrest size={50} />
+              <CrownCrest size={140} />
             </div>
             <SectionEyebrow>Reach Out</SectionEyebrow>
             <h2 className="font-cinzel text-cream text-2xl tab:text-4xl tracking-[0.22em] mb-5">
