@@ -61,6 +61,10 @@ export default function About() {
               with the precision and discretion that significant assets deserve.
             </p>
 
+            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-8">
+              Based in Las Vegas. Available wherever exceptional estates require exceptional representation.
+            </p>
+
             <blockquote className="border-l-2 border-gold pl-6 mb-10">
               <p className="font-cormorant italic text-cream text-lg tab:text-xl leading-relaxed">
                 &ldquo;The traditional estate sale was never designed for estates like yours.

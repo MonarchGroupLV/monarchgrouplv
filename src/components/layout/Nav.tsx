@@ -45,7 +45,7 @@ export default function Nav() {
                 MONARCH GROUP LV
               </div>
               <div className="font-montserrat text-gold text-[8px] tracking-[0.22em] uppercase mt-0.5 opacity-80">
-                Private Asset Placement · Las Vegas
+                Private Asset Placement · Nationwide
               </div>
             </div>
           </a>
