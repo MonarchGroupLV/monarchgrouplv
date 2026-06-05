@@ -8,9 +8,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        tab: "900px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        gold: "#B8942A",
+        "gold-light": "#D4AC4A",
+        "gold-bright": "#E2C97E",
+        "gold-dim": "#7A6018",
+        obsidian: "#080808",
+        obs2: "#0F0F0F",
+        obs3: "#141414",
+        obs4: "#1C1C1C",
+        obs5: "#242424",
+        cream: "#EDE5D0",
+        "cream-dim": "#A89870",
+      },
+      fontFamily: {
+        cinzel: ["var(--font-cinzel)", "serif"],
+        cormorant: ["var(--font-cormorant)", "serif"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
+      },
+      maxWidth: {
+        content: "1200px",
       },
     },
   },
