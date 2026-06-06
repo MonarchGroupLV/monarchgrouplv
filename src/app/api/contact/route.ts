@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await req.json();
     const { firstName, lastName, email, phone, interest, message } = body;
@@ -34,9 +33,19 @@ export async function POST(req: NextRequest) {
       .filter(Boolean)
       .join("");
 
-    await resend.emails.send({
-      from: "Monarch Group LV <noreply@monarchgrouplv.com>",
-      to: [contactEmail],
+    const transporter = nodemailer.createTransport({
+      host: "smtp.office365.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: contactEmail,
       replyTo: email,
       subject: "New Private Inquiry — Monarch Group LV",
       html: `
