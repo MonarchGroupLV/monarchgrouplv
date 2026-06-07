@@ -9,7 +9,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="bg-obs3 border-y border-[rgba(184,148,42,0.12)] py-14 px-6">
+    <section className="bg-obs3 border-y border-[rgba(184,148,42,0.12)] py-14 px-6" >
       <div className="max-w-content mx-auto">
         <div className="flex flex-wrap justify-center gap-10 tab:gap-20">
           {stats.map((stat, i) => (
