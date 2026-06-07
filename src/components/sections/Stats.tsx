@@ -1,7 +1,7 @@
 import RevealWrapper from "@/components/ui/RevealWrapper";
 
 const stats = [
-  { value: "$2M+", label: "Assets Placed" },
+  { value: "$14M+", label: "Assets Placed" },
   { value: "100+", label: "Estates Served" },
   { value: "Zero", label: "Public Exposure" },
   { value: "100%", label: "Discretion Guaranteed" },
