@@ -44,7 +44,7 @@ export default function Nav() {
               <div className="font-cinzel text-cream text-[11px] tracking-[0.22em] group-hover:text-gold transition-colors duration-300">
                 MONARCH GROUP LV
               </div>
-              <div className="hidden sm:block text-[0.45rem] tracking-[0.35em] uppercase text-amber-600 font-medium mt-0.5">
+              <div className="hidden sm:block text-[0.45rem] tracking-[0.35em] uppercase font-medium mt-0.5" style={{ color: '#B8942A' }}>
                 PRIVATE ASSET PLACEMENT · NATIONWIDE
               </div>
             </div>
