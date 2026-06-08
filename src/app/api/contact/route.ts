@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
       .join("");
 
     await resend.emails.send({
-      from: "Monarch Group LV <onboarding@resend.dev>",
+      from: "Monarch Group LV <concierge@send.monarchgrouplv.com>",
       to: "concierge@monarchgrouplv.com",
       replyTo: email,
       subject: "New Private Inquiry — Monarch Group LV",
