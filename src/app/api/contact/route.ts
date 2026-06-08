@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+const tdLabel = "padding:10px 0;color:#A89870;font-size:10px;text-transform:uppercase;letter-spacing:2px;width:32%";
+const tdValue = "padding:10px 0;color:#EDE5D0;font-size:13px";
 
 export async function POST(req: NextRequest) {
   try {
@@ -21,8 +26,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const contactEmail = process.env.CONTACT_EMAIL || "concierge@monarchgrouplv.com";
-
     const optionalRows = [
       phone ? `<tr><td style="${tdLabel}">Phone</td><td style="${tdValue}">${phone}</td></tr>` : "",
       interest ? `<tr><td style="${tdLabel}">Interest</td><td style="${tdValue}">${interest}</td></tr>` : "",
@@ -33,19 +36,9 @@ export async function POST(req: NextRequest) {
       .filter(Boolean)
       .join("");
 
-    const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com",
-      port: 587,
-      secure: false,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: contactEmail,
+    await resend.emails.send({
+      from: "Monarch Group LV <onboarding@resend.dev>",
+      to: "concierge@monarchgrouplv.com",
       replyTo: email,
       subject: "New Private Inquiry — Monarch Group LV",
       html: `
@@ -87,6 +80,3 @@ export async function POST(req: NextRequest) {
     );
   }
 }
-
-const tdLabel = "padding:10px 0;color:#A89870;font-size:10px;text-transform:uppercase;letter-spacing:2px;width:32%";
-const tdValue = "padding:10px 0;color:#EDE5D0;font-size:13px";
