@@ -35,46 +35,41 @@ export default function About() {
         <RevealWrapper delay={160}>
           <div>
             <SectionEyebrow>About the Firm</SectionEyebrow>
-            <h2 className="font-cinzel text-cream text-2xl tab:text-4xl tracking-[0.12em] mb-8 leading-snug">
+            <h2 className="font-cinzel text-cream text-2xl tab:text-4xl tracking-[0.12em] mb-6 leading-snug">
               A Different Kind of{" "}
               <em className="font-cormorant not-italic italic text-gold">
                 Luxury Broker
               </em>
             </h2>
 
-            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-5">
-              Monarch Group LV operates at the intersection of discretion and strategy. We
-              specialize in the private placement of high-value assets — rare collectibles, fine
-              jewelry, luxury vehicles, estate art, and investment-grade assets — for clients who
-              demand results without public exposure.
-            </p>
-
-            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-5">
-              Our process is built around protecting both the asset and the client. No estate
-              sale signs. No strangers walking through your property. No public exposure tied to
-              your name or address. Every asset placed through the right channel for maximum value.
-            </p>
-
-            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-8">
-              Founded by Quinton &ldquo;Kevin&rdquo; Westbrook, Monarch Group LV brings together expertise in
-              estate management, private sales, and auction strategy. Every engagement is handled
-              with the precision and discretion that significant assets deserve.
-            </p>
-
-            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-8">
-              Based in Las Vegas. Available wherever exceptional estates require exceptional representation.
-            </p>
-
-            <blockquote className="border-l-2 border-gold pl-6 mb-10">
-              <p className="font-cormorant italic text-cream text-lg tab:text-xl leading-relaxed">
-                &ldquo;The traditional estate sale was never designed for estates like yours.
-                Monarch Group was.&rdquo;
+            <blockquote className="border-l-2 border-gold pl-5 mb-8 mt-2">
+              <p className="font-cormorant italic leading-relaxed" style={{ fontSize: "1.2rem", color: "#EDE5D0" }}>
+                There&rsquo;s a reason you&rsquo;ve never heard of us.
+              </p>
+              <p className="font-cormorant italic leading-relaxed" style={{ fontSize: "1.2rem", color: "#EDE5D0" }}>
+                The clients who need us most prefer it that way.
               </p>
             </blockquote>
 
+            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-5">
+              Monarch Group LV was built on a single premise: extraordinary assets deserve
+              extraordinary representation. We specialize in the confidential placement of fine
+              jewelry, timepieces, artwork, antiques, rare collectibles, and curated high-value
+              interiors — through a vetted network of qualified buyers who value discretion as
+              much as you do.
+            </p>
+
+            <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em] mb-5">
+              Every engagement is handled with absolute discretion. No estate sale signs. No
+              strangers walking through your property. No public exposure tied to your name or
+              address. Assets remain securely in your possession while strategic placement is
+              executed behind the scenes.
+            </p>
+
             <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em]">
-              Our consignment network includes nationally recognized auction houses across
-              entertainment memorabilia, sports collectibles, rare books, manuscripts, and fine art.
+              Founded by Quinton &ldquo;Kevin&rdquo; Westbrook, a Las Vegas native with deep institutional
+              relationships across major auction houses, private estates, and the collector
+              marketplace. Available wherever exceptional estates require exceptional representation.
             </p>
           </div>
         </RevealWrapper>
