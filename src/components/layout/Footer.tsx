@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Footer() {
-  const year = 2024;
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-obs3 border-t border-[rgba(184,148,42,0.2)]">

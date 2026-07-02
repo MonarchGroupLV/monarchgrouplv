@@ -43,6 +43,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  icons: {
+    apple: "/images/monarch-crest-sm.png",
+  },
 };
 
 export default function RootLayout({

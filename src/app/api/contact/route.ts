@@ -1,13 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const tdLabel = "padding:10px 0;color:#A89870;font-size:10px;text-transform:uppercase;letter-spacing:2px;width:32%";
 const tdValue = "padding:10px 0;color:#EDE5D0;font-size:13px";
 
 export async function POST(req: NextRequest) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await req.json();
     const { firstName, lastName, email, phone, interest, message } = body;
 

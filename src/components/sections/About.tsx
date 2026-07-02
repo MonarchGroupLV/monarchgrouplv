@@ -67,9 +67,9 @@ export default function About() {
             </p>
 
             <p className="font-montserrat text-cream-dim text-[12px] leading-[1.95] tracking-[0.04em]">
-              Founded by Quinton &ldquo;Kevin&rdquo; Westbrook, a Las Vegas native with deep institutional
-              relationships across major auction houses, private estates, and the collector
-              marketplace. Available wherever exceptional estates require exceptional representation.
+              Founded by Quinton &ldquo;Kevin&rdquo; Westbrook, based in Las Vegas for nearly two decades with
+              deep institutional relationships across major auction houses, private estates, and the
+              collector marketplace. Available wherever exceptional estates require exceptional representation.
             </p>
           </div>
         </RevealWrapper>
